@@ -1,10 +1,6 @@
 var fs = require('fs');
 
-//delete file
-fs.unlink('tulis.txt');
-
-//buat directory
-fs.mkdirSync('hapus');
-
-//hapsu directory
-fs.rmdirSync('hapus');
+//buat File di dalam Folder Baru
+fs.mkdir('datax', function(){
+  fs.writeFile('./datax/data.txt','ini datanya !');
+});
