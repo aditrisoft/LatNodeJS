@@ -1,5 +1,10 @@
-var adi = require('fs');
+var fs = require('fs');
 
-adi.readFile('baca.txt','utf8', function(err,data){
-  console.log(data);
-});
+//delete file
+fs.unlink('tulis.txt');
+
+//buat directory
+fs.mkdirSync('hapus');
+
+//hapsu directory
+fs.rmdirSync('hapus');
